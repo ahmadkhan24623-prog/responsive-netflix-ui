@@ -1,0 +1,317 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+/* Navbar  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: black;
+}
+
+.pic-text{
+     display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.help-center {
+    color: white;
+}
+.logo {
+    width: 110px;
+}
+.nav-button{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.join-netflix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    height: 37px;
+    width: 110px;
+    
+}
+
+.sign-out {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid black;
+    min-height: 40px;
+    min-width: 100px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #E50914;
+    text-decoration: none;
+}
+
+/* Main Grid Layout */
+.main-layout {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.content-area {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+/* Content Details */
+.selector-row {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.selector-row label {
+    font-size: 13px;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.country-select {
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    background: transparent;
+}
+
+.page-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.intro-text,
+.request-link {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.legal-section h3 {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Sidebar Box (The "Card" look in the video) */
+.sidebar-card {
+    border: 1px solid #e6e6e6;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.sidebar-card h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.related-list {
+    list-style: none;
+}
+
+.related-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.related-list a {
+    color: #0071eb;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.related-list a:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+.help-footer {
+    background: linear-gradient(to bottom, #4e0000 0%, #000000 25%);
+    color: white;
+    padding: 50px 10%;
+    margin-top: 50px;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.footer-contact h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.btn-contact {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.btn-contact:hover {
+    background-color: #e6e6e6;
+}
+
+.footer-line {
+    border: 0;
+    border-top: 1px solid #333;
+    margin-bottom: 40px;
+}
+
+.lang-select {
+    background-color: black;
+    color: #999;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    width: 150px;
+}
+
+.footer-links-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links-list li {
+    margin-bottom: 15px;
+}
+
+.footer-links-list a {
+    color: #999; 
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links-list a:hover {
+    text-decoration: underline;
+}
+
+
+/* --- Responsiveness --- */
+
+
+@media (max-width: 950px) {
+    .main-layout {
+        flex-direction: column; 
+        gap: 40px;
+    }
+
+    .content-area, .sidebar {
+        width: 100%; 
+    }
+
+    .sidebar {
+        order: 2; 
+    }
+
+    .page-title {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .pic-text {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-button {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-contact h2 {
+        font-size: 20px;
+    }
+
+    .help-footer {
+        padding: 40px 20px; 
+    }
+}
+
+
+@media (max-width: 400px) {
+    .join-netflix, .sign-out {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    .nav-button {
+        flex-direction: column;
+    }
+}

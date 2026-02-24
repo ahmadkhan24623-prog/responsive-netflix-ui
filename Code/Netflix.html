@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Netflix.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="main-container">
+            <header class="navbar">
+                <div class="logo">NETFLIX</div>
+                <a href="../Code/signin/SignButton.Netflix.html"><button class="btn-signin">Sign In</button></a>
+            </header>
+
+            <div class="hero-section">
+                <h1>Unlimited movies, TV shows, and more</h1>
+                <p class="price-text">Starts at Rs 250. Cancel anytime.</p>
+                <p class="email-prompt">Ready to watch? Enter your email to create or restart your membership.</p>
+
+                <form class="signup-container">
+                    <div class="input-wrapper">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Email address</label>
+                    </div>
+                    <button type="submit" class="btn-get-started">
+                        Get Started <span class="chevron">&rsaquo;</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+       <div class="curve-wrapper"></div>
+    </main>
+
+    
+
+    <header>
+
+        <div class="container mt-5">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2 class="fs-2 fw-bold mb-0 Explore_prop">Trending Now</h2>
+                </div>
+            </div>
+
+            <div id="movieCarousel" class="carousel slide movie_carousel" data-bs-ride="false">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-nowrap">
+                            <div class="col-five">
+                                <div class="movie-card p-2">
+                                    <div class="movie-thumb-wrapper">
+                                        <span class="rank-number">1</span>
+                                        <img src="../Pictures/Movies images/pic 11.jpg" class="rounded-4" alt="City 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-five">
+                                <div class="movie-card p-2">
+                                    <div class="movie-thumb-wrapper">
+                                        <span class="rank-number">2</span>
+                                        <img src="../Pictures/Movies images/pic2.jpg" class="rounded-4" alt="City 2">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-five">
+                                <div class="movie-card p-2">
+                                    <div class="movie-thumb-wrapper">
+                                        <span class="rank-number">3</span>
+                                        <img src="../Pictures/Movies images/pic3.jpg" class="rounded-4" alt="City 3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-five">
+                                <div class="movie-card p-2">
+                                    <div class="movie-thumb-wrapper">
+                                        <span class="rank-number">4</span>
+                                        <img src="../Pictures/Movies images/pic4.jpg" class="rounded-4" alt="City 4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-five">
+                                <div class="movie-card p-2">
+                                    <div class="movie-thumb-wrapper">
+                                        <span class="rank-number">5</span>
+                                        <img src="../Pictures/Movies images/pic4.avif" class="rounded-4" alt="City 5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-flex flex-nowrap">
+                            <div class="col-five">
+                                <div class="movie-card p-2">
+                                    <div class="movie-thumb-wrapper">
+                                        <span class="rank-number">6</span>
+                                        <img src="../Pictures/Movies images/pic6.jfif"
+                                            class="rounded-4" alt="City 6">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-five">
+                                <div class="movie-card p-2">
+                                    <div class="movie-thumb-wrapper">
+                                        <span class="rank-number">7</span>
+                                        <img src="../Pictures/Movies images/pic7.jpg"
+                                            class="rounded-4" alt="City 7">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-five">
+                                <div class="movie-card p-2">
+                                    <div class="movie-thumb-wrapper">
+                                        <span class="rank-number">8</span>
+                                        <img src="../Pictures/Movies images/pic8.jpg"
+                                            class="rounded-4" alt="City 8">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-five">
+                                <div class="movie-card p-2">
+                                    <div class="movie-thumb-wrapper">
+                                        <span class="rank-number">9</span>
+                                        <img src="../Pictures/Movies images/pic9.jfif"
+                                            class="rounded-4" alt="City 9">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-five">
+                                <div class="movie-card p-2">
+                                    <div class="movie-thumb-wrapper">
+                                        <span class="rank-number">10</span>
+                                        <img src="../Pictures/Movies images/pic10.jpg"
+                                            class="rounded-4" alt="City 10">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev movie-nav" type="button" data-bs-target="#movieCarousel"
+                    data-bs-slide="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="carousel-control-next movie-nav" type="button" data-bs-target="#movieCarousel"
+                    data-bs-slide="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+                <div class="carousel-indicators custom-indicators">
+                    <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="1"></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <section class="features">
+            <h2 class="section-title">More Reasons to Join</h2>
+
+            <div class="card-grid">
+                <div class="card_image">
+                    <h3 class="card-heading">Enjoy on your TV</h3>
+                    <p class="card-description">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+                        players, and more.</p>
+                    <div class="card-icon icon-tv"></div>
+                </div>
+
+                <div class="card_image">
+                    <h3 class="card-heading">Download your shows to watch offline</h3>
+                    <p class="card-description">Save your favorites easily and always have something to watch.</p>
+                    <div class="card-icon icon-download"></div>
+                </div>
+
+                <div class="card_image">
+                    <h3 class="card-heading">Watch everywhere</h3>
+                    <p class="card-description">Stream unlimited movies and TV shows on your phone, tablet, laptop, and
+                        TV.</p>
+                    <div class="card-icon icon-telescope"></div>
+                </div>
+
+                <div class="card_image">
+                    <h3 class="card-heading">Create profiles for kids</h3>
+                    <p class="card-description">Send kids on adventures with their favorite characters in a space made
+                        just for them — free with your membership.</p>
+                    <div class="card-icon icon-kids"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- listing -->
+
+        <ul class="faq-list">
+            <h2 class="Asked_text">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-header">
+                    What is Netflix?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-body">
+                    <div class="faq-content">
+                        Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+                        anime, documentaries, and more on thousands of internet-connected devices.
+
+                        You can watch as much as you want, whenever you want without a single commercial – all for one
+                        low monthly price. There's always something new to discover and new TV shows and movies are
+                        added every week!
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-header">
+                    How much does Netflix cost?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-body">
+                    <div class="faq-content">
+                        Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one
+                        fixed monthly fee. Plans range from Rs 250 to Rs 1,100/month.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-header">
+                    Where i can watch
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-body">
+                    <div class="faq-content">
+                        Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+                        netflix.com from your personal computer or on any internet-connected device that offers the
+                        Netflix app, including smart TVs, smartphones, tablets, streaming media players and game
+                        consoles.
+
+                        You can also download your favorite shows with the iOS or Android app. Use downloads to watch
+                        while you're on the go and without an internet connection. Take Netflix with you anywhere.
+
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-header">
+                    How do I cancel
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-body">
+                    <div class="faq-content">
+                        Netflix is flexible. You can easily cancel your account online in two clicks. There are no
+                        cancellation fees – start or stop your account anytime.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-header">
+                    What i can watch on Netflix
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-body">
+                    <div class="faq-content">
+                        Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning
+                        Netflix originals, and more. Watch as much as you want, anytime you want.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-header">
+                    Is Netflix is good for kids
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-body">
+                    <div class="faq-content">
+                        The Netflix Kids experience is included in your membership to give parents control while kids
+                        enjoy family-friendly TV shows and movies in their own space.
+
+                        Kids profiles come with PIN-protected parental controls that let you restrict the maturity
+                        rating of content kids can watch and block specific titles you don’t want kids to see.
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </header>
+
+
+    <footer>
+
+
+        <div class="main-container_2">
+            <section class="membership">
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <form class="signup-container">
+                    <div class="input-wrapper">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Email address</label>
+                    </div>
+                    <form class="signup-container">
+                        <button type="submit" class="btn-get-started">Get Started</button>
+                    </form>
+                </form>
+            </section>
+
+            <footer class="footer">
+                <p class="footer-top"><a href="#">Questions? Contact us.</a></p>
+
+                <ul class="footer-links">
+                    <li><a href="Footer links/FAQ/FAQ.html">FAQ</a></li>
+                    <li><a href="Footer links/Help Center/helpCenter.html">Help Center</a></li>
+                    <li><a href="signin/SignButton.Netflix.html">Account</a></li>
+                    <li><a href="../Code/Footer links/media Center/mediaCenter.html">Media Center</a></li>
+                    <li><a href="../Code/Footer links/Investor Relations/Investor_Relations.html">Investor Relations</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="Footer links/way to watch/wayToWatch.html">Ways to Watch</a></li>
+                    <li><a href="Footer links/Trem and condition/termCondition.html">Terms of Use</a></li>
+                    <li><a href="../Code/Footer links/Privacy/privacy.html">Privacy</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                    <li><a href="../Code/Footer links/Corporate Information/Corporate_Information.html">Corporate Information</a></li>
+                    <li><a href="Footer links/Contact us/contactUs.html">Contact Us</a></li>
+                    <li><a href="../Code/Footer links/Speed/speed.html">Speed Test</a></li>
+                    <li><a href="Footer links/legal Notice/legalNotice.html">Legal Notices</a></li>
+                    <li><a href="Footer links/only on netflix/onlyOnNetflix.html">Only on Netflix</a></li>
+                </ul>
+
+                <div class="lang-selector">
+                    <select id="language">
+                        <option value="en">English</option>
+                        <option value="hi">हिन्दी</option>
+                    </select>
+                </div>
+
+                <p class="footer-country">Netflix Pakistan</p>
+                <br><br>
+                <p>This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+                <a href="#" class="Learn_more">Learn more</a>
+            </footer>
+        </div>
+
+    </footer>
+
+    <script src="Netflix.js"></script>
+</body>
+
+</html>

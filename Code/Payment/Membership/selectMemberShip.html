@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Choose Plan</title>
+    <link rel="stylesheet" href="selectMemberShip.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="logo">
+        <a href="#" class="sign-out">Sign Out</a>
+    </nav>
+
+    <div class="membership-wrapper">
+        <p class="step-num">STEP 2 OF 3</p>
+        <h1>Choose the plan that's right for you</h1>
+
+        <div class="plans-row">
+            <div class="plan-card" onclick="select(this)">
+                <div class="card-header blue-grad">
+                    <span class="p-name">Mobile</span>
+                    <span class="p-res">480p</span>
+                    <div class="check">✔</div>
+                </div>
+                <div class="card-info">
+                    <div class="info-row">Monthly price<br><b>PKR 250</b></div>
+                    <div class="info-row">Video and sound quality<br><b>Fair</b></div>
+                    <div class="info-row">Resolution<br><b>480p</b></div>
+                    <div class="info-row">Supported devices<br><b>Mobile phone, tablet</b></div>
+                    <div class="info-row">Devices your household can watch at the same time<br><b>1</b></div>
+                    <div class="info-row">Download devices<br><b>1</b></div>
+                </div>
+            </div>
+
+            <div class="plan-card" onclick="select(this)">
+                <div class="card-header blue-grad">
+                    <span class="p-name">Basic</span>
+                    <span class="p-res">720p</span>
+                    <div class="check">✔</div>
+                </div>
+                <div class="card-info">
+                    <div class="info-row">Monthly price<br><b>PKR 450</b></div>
+                    <div class="info-row">Video and sound quality<br><b>Good</b></div>
+                    <div class="info-row">Resolution<br><b>720p (HD)</b></div>
+                    <div class="info-row">Supported devices<br><b>TV, computer, mobile, tablet</b></div>
+                    <div class="info-row">Devices your household can watch at the same time<br><b>1</b></div>
+                    <div class="info-row">Download devices<br><b>1</b></div>
+                </div>
+            </div>
+
+            <div class="plan-card" onclick="select(this)">
+                <div class="card-header purple-grad">
+                    <span class="p-name">Standard</span>
+                    <span class="p-res">1080p</span>
+                    <div class="check">✔</div>
+                </div>
+                <div class="card-info">
+                    <div class="info-row">Monthly price<br><b>PKR 800</b></div>
+                    <div class="info-row">Video and sound quality<br><b>Great</b></div>
+                    <div class="info-row">Resolution<br><b>1080p (Full HD)</b></div>
+                    <div class="info-row">Supported devices<br><b>TV, computer, mobile, tablet</b></div>
+                    <div class="info-row">Devices your household can watch at the same time<br><b>2</b></div>
+                    <div class="info-row">Download devices<br><b>2</b></div>
+                </div>
+            </div>
+
+            <div class="plan-card active" onclick="select(this)">
+                <div class="popular-tag">Most Popular</div>
+                <div class="card-header red-solid">
+                    <span class="p-name">Premium</span>
+                    <span class="p-res">4K + HDR</span>
+                    <div class="check">✔</div>
+                </div>
+                <div class="card-info">
+                    <div class="info-row">Monthly price<br><b>PKR 1,100</b></div>
+                    <div class="info-row">Video and sound quality<br><b>Best</b></div>
+                    <div class="info-row">Resolution<br><b>4K (Ultra HD) + HDR</b></div>
+                    <div class="info-row">Supported devices<br><b>TV, computer, mobile, tablet</b></div>
+                    <div class="info-row">Devices your household can watch at the same time<br><b>4</b></div>
+                    <div class="info-row">Download devices<br><b>6</b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="error-msg" style="color: #e50914; display: none; margin-bottom: 10px; font-weight: bold;">
+        Please select a plan to continue.
+    </p>
+
+    <button class="next-btn">Next</button>
+
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <p>Questions? Contact us.</p>
+            <div class="footer-links">
+                <a href="../../Footer links/FAQ/">FAQ</a>
+                <a href="../../Footer links/Help Center/helpCenter.html">Help Center</a>
+                <a href="../../Footer links/Trem and condition/termCondition.html">Terms of Use</a>
+                <a href="../../Footer links/Privacy/privacy.html">Privacy</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="../../Footer links/Corporate Information/Corporate_Information.html">Corporate Information</a>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <script src="selectMemberShip.js"></script>
+</body>
+
+</html>

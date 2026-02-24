@@ -1,0 +1,88 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+.navbar { display: flex; justify-content: space-between; padding: 15px 4%; border-bottom: 1px solid #e6e6e6; align-items: center; }
+.logo { width: 100px; }
+.sign-out { text-decoration: none; color: #333; font-weight: bold; }
+
+.form-container { max-width: 450px; margin: 40px auto; padding: 20px; }
+
+.back-link { 
+    text-decoration: none; 
+    color: #0071eb; 
+    font-size: 16px; 
+    display: block; 
+    margin-bottom: 20px; 
+}
+
+.step-num { font-size: 13px; margin-bottom: 5px; }
+h1 { font-size: 32px; margin-bottom: 20px; font-weight: 700; }
+
+.card-icons-row img { height: 25px; margin-right: 10px; margin-bottom: 20px; }
+
+.input-group { margin-bottom: 10px; }
+.input-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+
+input { 
+    width: 100%; 
+    padding: 15px; 
+    font-size: 16px; 
+    border: 1px solid #8c8c8c; 
+    border-radius: 2px; 
+}
+
+/* Plan Summary Box Styling */
+.plan-summary {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.summary-text { display: flex; flex-direction: column; }
+.summary-text b { color: #333; font-size: 16px; }
+.summary-text span { color: #737373; font-size: 14px; }
+
+.change-plan { color: #0071eb; text-decoration: none; font-weight: bold; }
+
+.disclaimer { font-size: 13px; color: #737373; margin: 20px 0; line-height: 1.4; }
+
+.start-btn { 
+    width: 100%; 
+    background: #e50914; 
+    color: white; 
+    border: none; 
+    padding: 20px; 
+    font-size: 24px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+
+
+.footer {
+    background-color: #f3f3f3;
+    padding: 30px 4%;
+    color: #737373;
+    border-top: 1px solid #e6e6e6;
+}
+
+.footer-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #737373;
+    text-decoration: none;
+    font-size: 13px;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Layout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="onlyOnNetflix.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-overlay">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Logo"
+                class="logo">
+            <button class="sign-in-small"><a href="../../signin/SignButton.Netflix.html">Sign In</a></button>
+        </nav>
+
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-text-box">
+                    <h1 class="only_on_netflix">Only on Netflix</h1>
+                    <p class="only_on_netflix_text">Netflix is the home of amazing original programming that you can't
+                        find anywhere else. Movies, TV shows, specials and more, all tailored specifically to you.</p>
+
+                    <div class="input-container">
+                        <input type="email" placeholder="Email address">
+                        <button class="join-now-btn">Join Now</button>
+                    </div>
+                    <p class="price-tag">Endless entertainment starting at Rs 250</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="row">
+            <h2 class="Your_next_movie">Your Next Watch</h2>
+
+            <div class="slider-wrapper">
+                <button class="nav-btn left-btn" onclick="scrollSlider(event,-1)">&#10094;</button>
+
+                <div class="slider" id="movieSlider">
+                    <div class="card"><img src="movies pictures/pic_20.jpg" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_21.jpg" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_22.jpg" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_22.jfif" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_23.jfif" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_6.jfif" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_7.jfif" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_8.jfif" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_9.jfif" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_10.jfif" alt="Movie"></div>
+                </div>
+
+                <button class="nav-btn right-btn" onclick="scrollSlider(event,1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="row">
+            <h2 class="Your_next_movie">New on Netflix</h2>
+
+            <div class="slider-wrapper">
+                <button class="nav-btn left-btn" onclick="scrollSlider(event,-1)">&#10094;</button>
+
+                <div class="slider" id="MovieSlider">
+                    <div class="card"><img src="movies pictures/pic_11.jfif" alt="Movie">
+                        <div class="card-info">
+                            <p class="movie-title">Jolly LLB 3</p>
+                        </div>
+                    </div>
+                    <div class="card"><img src="movies pictures/pic 12.jpg" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_13.jfif" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_14.avif" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_15.jpg" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_16.jfif" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_17.jpg" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_18.jpg" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_19.jfif" alt="Movie"></div>
+                    <div class="card"><img src="movies pictures/pic_20.jpg" alt="Movie"></div>
+                </div>
+
+                <button class="nav-btn right-btn" onclick="scrollSlider(event,1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="pricing-section">
+            <h2 class="plan_for_you">A Plan to Suit Your Needs</h2>
+            <div class="pricing-grid">
+                <a href="./../Payment/Membership/selectMemberShip.html">
+                <div class="plan-card blue-gradient">
+                    <h3>Mobile</h3>
+                    <p class="res">480p</p>
+                    <ul class="features">
+                        <li>Fair video quality</li>
+                        <li>For your phone or tablet</li>
+                    </ul>
+                    <p class="price">Rs 250 /mo</p>
+                </div>
+                </a>
+
+                <a href="../../Payment/Membership/selectMemberShip.html">
+                    <div class="plan-card blue-dark-gradient">
+                    <h3>Basic</h3>
+                    <p class="res">720p</p>
+                    <ul class="features">
+                        <li>Good video quality</li>
+                        <li>For your phone, tablet, laptop and TV</li>
+                    </ul>
+                    <p class="price">Rs 450 /mo</p>
+                </div>
+                </a>
+
+                <a href="../../Payment/Membership/selectMemberShip.html">
+                    <div class="plan-card purple-gradient">
+                    <h3>Standard</h3>
+                    <p class="res">1080p</p>
+                    <ul class="features">
+                        <li>Great video quality</li>
+                        <li>For your phone, tablet, laptop and TV</li>
+                    </ul>
+                    <p class="price">Rs 800 /mo</p>
+                </div>
+                </a>
+
+               <a href="../../Payment/Membership/selectMemberShip.html">
+                 <div class="plan-card premium-gradient popular">
+                    <span class="badge">Most Popular</span>
+                    <h3>Premium</h3>
+                    <p class="res">4K + HDR</p>
+                    <ul class="features">
+                        <li>Best video quality</li>
+                        <li>Immersive sound (spatial audio)</li>
+                        <li>For your phone, tablet, laptop and TV</li>
+                    </ul>
+                    <p class="price">Rs 1,100 /mo</p>
+                </div>
+               </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Questions? Contact us.</p>
+
+        <ul class="footer-links">
+            <li><a href="../FAQ/FAQ.html">FAQ</a></li>
+            <li><a href="../Help Center/helpCenter.html">Help Center</a></li>
+            <li><a href="../../signin/SignButton.Netflix.html">Account</a></li>
+            <li><a href="../media Center/mediaCenter.html">Media Center</a></li>
+            <li><a href="../Investor Relations/Investor_Relations.html">Investor Relations</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="../way to watch/wayToWatch.html">Ways to Watch</a></li>
+            <li><a href="../Trem and condition/termCondition.html">Terms of Use</a></li>
+            <li><a href="../Privacy/privacy.html">Privacy</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+            <li><a href="../Corporate Information/Corporate_Information.html">Corporate Information</a></li>
+            <li><a href="../Contact us/contactUs.html">Contact Us</a></li>
+            <li><a href="../Speed/speed.html">Speed Test</a></li>
+            <li><a href="../legal Notice/legalNotice.html">Legal Notices</a></li>
+            <li><a href="./onlyOnNetflix.html">Only on Netflix</a></li>
+        </ul>
+
+    </footer>
+
+    <div id="stickyJoin" class="footer-blur-container">
+        <div class="blur-overlay"></div>
+        <button class="join-now-btn">Join Now</button>
+    </div>
+
+    <script src="onlyOnNetflix.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix Investor Relations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="Cookie_Preferences.css">
+</head>
+<body>
+
+    <footer class="social-footer">
+        <div class="legal-links">
+            <a href="javascript:void(0)" id="open-cookies">Cookie Preferences</a>
+        </div>
+    </footer>
+
+    <div id="cookie-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-cookies" class="close-btn">&times;</button>
+            <div class="modal-header">
+                <span class="brand-netflix">NETFLIX</span>
+                <h2>Privacy Preference Center</h2>
+            </div>
+            <div class="modal-body">
+                <div class="sidebar">
+                    <button class="tab-link active">General Description</button>
+                    <button class="tab-link">Essential Cookies</button>
+                    <button class="tab-link">Performance Cookies</button>
+                </div>
+                <div class="description-area">
+                    <h3>General Description</h3>
+                    <p>Privacy settings in most browsers allow you to prevent your browser from accepting some or all cookies...</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="save-btn" id="save-cookies">Save settings</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Cookie_Preferences.js"></script>
+</body>
+</html>

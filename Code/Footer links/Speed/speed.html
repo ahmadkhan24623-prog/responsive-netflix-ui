@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast.com Pro Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="speed.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="logo-section">
+            <div class="logo-wrapper">
+                <svg class="speed-logo" viewBox="0 0 100 60">
+                    <path class="gauge-arc" d="M20 50 A 30 30 0 1 1 80 50" fill="none" stroke="#e50914"
+                        stroke-width="6" />
+                    <line id="needle" x1="50" y1="50" x2="50" y2="20" stroke="black" stroke-width="4"
+                        stroke-linecap="round" style="transform-origin: 50px 50px;" />
+                    <circle cx="50" cy="50" r="3" fill="black" />
+                </svg>
+                <div class="brand-name">FAST</div>
+            </div>
+        </header>
+
+        <main class="speed-content">
+            <p class="speed-label">Your Internet speed is</p>
+            <div class="display-container">
+                <div id="speed-number">0</div>
+                <div class="unit-restart">
+                    <span class="mbps-unit">Mbps</span>
+                    <button id="refresh-btn" class="restart-button">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                </div>
+            </div>
+            <button class="more-info-btn">Show more info</button>
+        </main>
+
+        <footer class="footer-icons">
+            <i class="fa-solid fa-circle-question"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+        </footer>
+    </div>
+
+    <script src="speed.js"></script>
+</body>
+
+</html>

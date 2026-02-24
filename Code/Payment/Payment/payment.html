@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Setup Card</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="logo">
+        <a href="#" class="sign-out">Sign Out</a>
+    </nav>
+
+    <div class="form-container">
+        <a href="../select_payment_mood/choosePayment.html" class="back-link">˂ Change payment method</a>
+
+        <p class="step-num">STEP <b>3</b> OF <b>3</b></p>
+        <h1>Set up your credit or debit card</h1>
+
+        <div class="card-icons-row">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+        </div>
+
+        <form class="card-form">
+            <div class="input-group">
+                <input type="text" placeholder="Card number"  maxlength="16" required>
+            </div>
+            <div class="input-row">
+                <input type="text" placeholder="Expiration date"  maxlength="4" required>
+                <input type="text" placeholder="CVV"  maxlength="3" required>
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="First name" required>
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Last name" required>
+            </div>
+
+            <div class="plan-summary">
+                <div class="summary-text">
+                    <b id="displayPrice">Rs 450/month</b>
+                    <span id="displayPlan">Basic</span>
+                </div>
+                <a href="../Membership/selectMemberShip.html" class="change-plan">Change</a>
+            </div>
+
+            <p class="disclaimer">
+                By checking the checkbox below, you agree to our Terms of Use and Privacy Statement.
+            </p>
+
+            <button type="submit" class="start-btn">Start Membership</button>
+        </form>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <p>Questions? Contact us.</p>
+            <div class="footer-links">
+                <a href="../../Footer links/FAQ/FAQ.html">FAQ</a>
+                <a href="../../Footer links/Help Center/helpCenter.html">Help Center</a>
+                <a href="../../Footer links/Trem and condition/termCondition.html">Terms of Use</a>
+                <a href="../../Footer links/Privacy/privacy.html">Privacy</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="../../Footer links/Corporate Information/Corporate_Information.html">Corporate Information</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

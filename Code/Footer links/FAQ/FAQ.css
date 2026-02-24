@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Navbar  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: black;
+}
+
+.pic-text{
+     display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.help-center {
+    color: white;
+}
+.logo {
+    width: 110px;
+}
+.nav-button{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.join-netflix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    height: 37px;
+    width: 110px;
+    
+}
+
+.sign-out {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid black;
+    min-height: 40px;
+    min-width: 100px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+
+/* image card */
+.card-img-top {
+   width: 100%;          
+    max-width: 800px;      
+    height: auto;         
+    aspect-ratio: 16 / 9;  
+    object-fit: cover; 
+    display: block;
+    border-radius: 8px;
+}
+p{
+    line-height: 1.6;
+}
+.img-container {
+   padding: 40px 5%;      
+    max-width: 1200px;     
+    margin: 0 auto;
+}
+
+.what-Neflix {
+
+    font-size:xx-large;
+    padding-bottom: 30px ;
+}
+
+.text-red {
+    color: #E50914; 
+    font-weight: bold;
+}
+
+.card{
+    border-bottom: 1px solid #928e8e;
+}
+
+a{
+  color: #E50914; 
+    font-weight: bold;
+    text-decoration: none;  
+}
+
+.helpful {
+    color: #333;
+    text-decoration:underline;
+}
+
+
+/* footer */
+.help-footer {
+    background: linear-gradient(to bottom, #4e0000 0%, #000000 25%);
+    color: white;
+    padding: 50px 10%;
+    margin-top: 50px;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.footer-contact h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.btn-contact {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.btn-contact:hover {
+    background-color: #e6e6e6;
+}
+
+.footer-line {
+    border: 0;
+    border-top: 1px solid #333;
+    margin-bottom: 40px;
+}
+
+.lang-select {
+    background-color: black;
+    color: #999;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    width: 150px;
+}
+
+.footer-links-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links-list li {
+    margin-bottom: 15px;
+}
+
+.footer-links-list a {
+    color: #999; 
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links-list a:hover {
+    text-decoration: underline;
+}
+
+/* Respensive */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .pic-text {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-button {
+        width: 100%;
+        justify-content: center; 
+    }
+
+    .img-container {
+        padding: 40px 20px; 
+    }
+
+    .what-Neflix {
+        font-size: 1.5rem; 
+    }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+    .nav-button {
+        flex-direction: column; 
+        width: 100%;
+    }
+    
+    .join-netflix, .sign-out {
+        width: 100%; 
+    }
+}

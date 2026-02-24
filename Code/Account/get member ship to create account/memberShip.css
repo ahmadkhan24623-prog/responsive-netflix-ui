@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.logo {
+    height: 45px;
+}
+
+.signin-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-underline-offset: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border: 1px solid red;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #e50914;
+}
+
+.content-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
+.password-box {
+    width: 100%;
+    max-width: 440px;
+    padding: 20px;
+}
+
+.step-indicator {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.sub-text {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #8c8c8c;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.checkbox-container input {
+    width: 25px;
+    height: 25px;
+}
+
+.next-btn {
+    width: 100%;
+    padding: 20px;
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+.footer {
+    background: #f3f3f3;
+    padding: 40px 10%;
+    border-top: 1px solid #e6e6e6;
+    color: #737373;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-grid a {
+    color: #737373;
+    text-decoration: none;
+    font-size: 0.8rem;
+}

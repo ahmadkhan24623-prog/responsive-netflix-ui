@@ -1,0 +1,124 @@
+/* 1. Modal Overlay - Darkens the whole screen */
+.modal-overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85); 
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* 2. Main Box Layout */
+.modal-content {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+
+.modal-header {
+    padding: 30px 40px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.brand-netflix {
+    color: #e50914; /* Netflix Red */
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+}
+
+.modal-header h2 {
+    color: #333;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+/* 4. Split Body (Sidebar + Text) */
+.modal-body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 35%;
+    background: #f4f4f4;
+    border-right: 1px solid #ddd;
+}
+
+.tab-link {
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    transition: background 0.2s;
+}
+
+
+.tab-link.active {
+    background: white;
+    border-right: 5px solid #e50914; /* The red bar from your video */
+    font-weight: bold;
+    color: #000;
+}
+
+.description-area {
+    width: 65%;
+    padding: 40px;
+    overflow-y: auto;
+    color: #444;
+}
+
+.description-area h3 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.description-area p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* 5. Footer and Buttons */
+.modal-footer {
+    padding: 20px 40px;
+    background: #f4f4f4;
+    border-top: 1px solid #ddd;
+}
+
+.save-btn {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+}

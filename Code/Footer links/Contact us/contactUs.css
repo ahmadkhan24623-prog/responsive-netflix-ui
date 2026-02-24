@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Navbar */
+/* Black Header Styles */
+.main-header {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 45px;
+    height: 64px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+.divider {
+    margin: 0 15px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.help-center-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Red Bottom Border */
+.header-bottom-line {
+    height: 4px;
+    background-color: #e50914;
+    width: 100%;
+}
+
+/* Header Right Side Elements */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-container {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    width: 150px;
+    font-size: 14px;
+}
+
+.search-icon {
+    color: #666;
+    font-size: 14px;
+}
+
+.btn-join {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 7px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-signin {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 { font-size: 32px; margin-bottom: 10px; }
+
+.search-bar {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+/* Quick Links */
+.quick-links h3 { border-bottom: 1px solid #eee; padding-bottom: 10px; }
+
+.quick-links ul { list-style: none; padding: 0; }
+
+.quick-links li { margin: 15px 0; }
+
+.quick-links a {
+    text-decoration: none;
+    color: #0073bb;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #757575;
+    padding: 50px 4%;
+    margin-top: 100px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.footer-links a {
+    color: #757575;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.lang-dropdown {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #333;
+}

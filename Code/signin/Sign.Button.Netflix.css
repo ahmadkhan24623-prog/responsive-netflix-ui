@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at top, #450c10 30%, #000000 70%);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-header {
+    padding: 25px 50px;
+}
+
+.logo {
+    height: 45px;
+}
+
+.login-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    text-align: left;
+}
+
+.login-box h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+.error-text {
+    color: #eb3942;
+    font-size: 0.85rem;
+    margin-top: 6px;
+    display: none; 
+    text-align: left;
+}
+
+
+.input-error {
+    border-color: #eb3942 !important;
+}
+
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 24px 10px 10px 10px;
+    background: rgba(22, 22, 22, 0.7);
+    border: 1px solid #8c8c8c;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-wrapper label {
+    position: absolute;
+    left: 10px;
+    top: 18px;
+    color: #8c8c8c;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+/* Move label up when input is focused or has text */
+.input-wrapper input:focus + label,
+.input-wrapper input:valid + label {
+    top: 5px;
+    font-size: 0.75rem;
+}
+
+.btn-continue {
+    width: 100%;
+    padding: 12px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-continue:hover {
+    background-color: #c11119;
+}
+
+.login-help {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login-help a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.recaptcha-text {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #8c8c8c;
+    line-height: 1.4;
+}
+
+.recaptcha-text a {
+    color: #0071eb;
+    text-decoration: none;
+}
+
+
+/* footer */
+
+.signin-footer {
+            background-color: rgb(37, 36, 36);
+            padding: 40px 10%;
+            color: var(--text-gray);
+        }
+
+        .footer-top { margin-bottom: 30px; }
+        .footer-top a { color: var(--text-gray); text-decoration: none; }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .footer-grid a {
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            text-decoration: none;
+        }
+
+        .footer-grid a:hover { text-decoration: underline; }
+
+        @media (max-width: 740px) {
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }

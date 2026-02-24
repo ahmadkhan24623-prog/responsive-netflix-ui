@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Help Center</title>
+    <link rel="stylesheet" href="helpCenter.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-left">
+            <span class="netflix-logo">NETFLIX</span>
+            <span class="help-label">Help Center</span>
+        </div>
+        <div class="header-right">
+            <button class="join-link">Join Netflix</button>
+            <button class="sign-in-btn"><a href="../../signin/SignButton.Netflix.html" style="color: white; text-decoration: none;">Sign In</a></button>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+    <section class="hero">
+        <h1>How can we help?</h1>
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Type a question, topic or issue">
+        </div>
+        <div class="popular-topics">
+            Popular topics: <a href="#">How to sign up</a>, <a href="#">Plans and Pricing</a>
+        </div>
+    </section>
+
+    <section class="topics-section">
+        <p class="explore-text">Explore Topics ↓</p>
+        
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>👤 Account and Billing</span>
+                <span class="arrow">∨</span>
+            </div>
+            <div class="accordion-content">
+                <p>Account Settings</p>
+                <p>Paying for Netflix</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>🔧 Fix a Problem</span>
+                <span class="arrow">∨</span>
+            </div>
+            <div class="accordion-content">
+                <div class="nested-accordion">
+                    <div class="nested-header" onclick="toggleNested(this)">
+                        <span>Account Issues</span>
+                        <span class="arrow">∨</span>
+                    </div>
+                    <div class="nested-body">
+                        <div class="article-link"><span>☑</span> Can't sign in to Netflix</div>
+                        <div class="article-link"><span>☑</span> Netflix says to sign up when trying to sign in</div>
+                        <div class="article-link"><span>☑</span> Netflix says account already in use</div>
+                    </div>
+                </div>
+                <p>Billing Issues</p>
+                <p>Error Codes</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#"><span>⟳</span> Reset password</a></li>
+            <li><a href="#"><span>✉</span> Update email</a></li>
+            <li><a href="#"><span>👤</span> Get help signing in</a></li>
+            <li><a href="#"><span>💳</span> Update payment method</a></li>
+            <li><a href="#"><span>🎬</span> Request TV shows or movies</a></li>
+        </ul>
+    </section>
+
+    <section class="contact-us">
+        <p>Need more help?</p>
+        <button class="black-btn">Contact Us</button>
+    </section>
+</main>
+
+    <footer class="main-footer">
+    <div class="footer-container">
+        
+        <div class="footer-bottom-content">
+            <div class="lang-wrapper">
+                <select class="lang-picker">
+                    <option>English</option>
+                    <option>العربية</option>
+                    <option>Français</option>
+                </select>
+            </div>
+
+            <ul class="footer-links-grid">
+                <li><a href="../Trem and condition/termCondition.html">Terms of Use</a></li>
+                <li><a href="../Privacy/privacy.html">Privacy</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="../Corporate Information/Corporate_Information.html">Corporate Information</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    <script src="helpCenter.js"></script>
+</body>
+</html>

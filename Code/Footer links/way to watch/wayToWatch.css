@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Navbar  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: black;
+}
+
+.pic-text{
+     display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.help-center {
+    color: white;
+}
+.logo {
+    width: 110px;
+}
+.nav-button{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.join-netflix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    height: 37px;
+    width: 110px;
+    
+}
+
+.sign-out {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid black;
+    min-height: 40px;
+    min-width: 100px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.help-text {
+    color: #333;
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.join-btn { color: #333; }
+
+.sign-in {
+    background-color: #e50914;
+    color: white !important;
+    padding: 6px 15px;
+    border-radius: 3px;
+}
+
+/* Layout Container */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    display: flex;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 2;
+}
+
+.breadcrumb {
+    color: #0073bb;
+    font-size: 14px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.intro-text {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.device-section h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* The Red Dot List */
+.device-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.device-list li::before {
+    content: "•";
+    color: #e50914;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+}
+
+.device-list li {
+    color: #e50914;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.note {
+    font-size: 13px;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    flex: 1;
+}
+
+.sidebar h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.sidebar-links {
+    list-style: none;
+}
+
+.sidebar-links li {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 8px;
+}
+
+.sidebar-links a {
+    text-decoration: none;
+    color: #0073bb;
+    font-size: 14px;
+}
+
+/* Footer Section */
+.help-footer {
+    background: linear-gradient(to bottom, #4e0000 0%, #000000 25%);
+    color: white;
+    padding: 50px 10%;
+    margin-top: 50px;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.footer-contact h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.btn-contact {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.btn-contact:hover {
+    background-color: #e6e6e6;
+}
+
+.footer-line {
+    border: 0;
+    border-top: 1px solid #333;
+    margin-bottom: 40px;
+}
+
+
+.lang-select {
+    background-color: black;
+    color: #999;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    width: 150px;
+}
+
+
+.footer-links-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links-list li {
+    margin-bottom: 15px;
+}
+
+.footer-links-list a {
+    color: #999; 
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links-list a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Respensive */
+@media (max-width: 768px) {
+    
+    /* 1. Stack the Navbar */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .pic-text {
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 30px;
+    }
+
+    .main-content, .sidebar {
+        flex: none;
+        width: 100%;
+    }
+
+    .device-list {
+        grid-template-columns: 1fr; 
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .help-footer {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 22px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-button {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .join-netflix, .sign-out {
+        width: 100%; 
+    }
+}

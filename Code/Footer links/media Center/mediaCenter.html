@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix | Media Center</title>
+    <link rel="stylesheet" href="mediaCenter.css">
+</head>
+
+<body>
+
+    <header class="media-header">
+        <nav class="nav-overlay">
+            <div class="brand-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Logo"
+                    class="logo">
+                <span class="media-center-text">Media Center</span>
+            </div>
+
+            <div class="nav-links">
+                <span class="nav-item" onclick="openModal('languageModal')">English ▾</span>
+                <span class="nav-item" onclick="openModal('countryModal')">🇵🇰 Pakistan ▾</span>
+                <a href="#" class="nav-item">Newsroom ↗</a>
+
+                <div class="resources-dropdown">
+                    <span class="nav-item">Resources ▾</span>
+                </div>
+
+                <button class="apply-btn">Apply</button>
+                <button class="press-btn">Press Log In</button>
+                <span class="search-glass">🔍</span>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Discover stories and experiences to share with Pakistan.</h1>
+            <div class="search-wrapper">
+                <span class="search-icon-inside">🔍</span>
+                <input type="text" placeholder="Search for Netflix titles and news">
+            </div>
+        </div>
+    </header>
+
+    <div id="languageModal" class="modal-overlay">
+        <div class="modal-window">
+            <button class="close-x" onclick="closeModals()">×</button>
+            <h2>What language do you speak?</h2>
+            <div class="lang-grid">
+                <span>العربية</span> <span>Deutsch</span> <span>English</span> <span>Español</span>
+                <span>Français</span> <span>Italiano</span> <span>Português</span> <span>Türkçe</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="countryModal" class="modal-overlay">
+        <div class="modal-window">
+            <button class="close-x" onclick="closeModals()">×</button>
+            <h2>What country do you cover?</h2>
+            <p>Select a country to see information specific to your coverage region.</p>
+            <select class="custom-select">
+                <option>🇵🇰 Pakistan</option>
+                <option>🇺🇸 United States</option>
+            </select>
+        </div>
+    </div>
+
+    <section class="filter-section">
+        <div class="filter-top">
+            <p>I'm interested in covering titles releasing in <span class="month-select">February ▾</span></p>
+        </div>
+        <div class="filter-buttons">
+            <button class="filter-btn">🎬 Film</button>
+            <button class="filter-btn">📺 Series</button>
+            <button class="filter-btn">🎞️ Documentary</button>
+            <button class="filter-btn">📹 Reality</button>
+        </div>
+    </section>
+
+
+    <main>
+        <div class="image-section">
+            <div class="poster-grid">
+                <div class="item">
+                    <img src="pictures/pic_1.jfif" alt="Is It Cake?">
+                    <p>February 4, 2026</p>
+                </div>
+                <div class="item">
+                    <img src="pictures/pic_14.avif" alt="Lucy Letby">
+                    <p>February 4, 2026</p>
+                </div>
+                <div class="item">
+                    <img src="pictures/pic_20.jpg" alt="Lincoln Lawyer">
+                    <p>February 5, 2026</p>
+                </div>
+                <div class="item">
+                    <img src="pictures/pic_20.jpg" alt="Les Lionnes">
+                    <p>February 5, 2026</p>
+                </div>
+                <div class="item">
+                    <img src="pictures/pic_5.jfif" alt="Salvador">
+                    <p>February 6, 2026</p>
+                </div>
+                <div class="item">
+                    <img src="pictures/pic_6.jfif" alt="Queen of Chess">
+                    <p>February 6, 2026</p>
+                </div>
+                <div class="item">
+                    <img src="pictures/pic_7.jfif" alt="Queen of Chess">
+                    <p>February 6, 2026</p>
+                </div>
+                <div class="item">
+                    <img src="pictures/pic_8.jfif" alt="Queen of Chess">
+                    <p>February 6, 2026</p>
+                </div>
+                <div class="item">
+                    <img src="pictures/pic_9.jfif" alt="Queen of Chess">
+                    <p>February 6, 2026</p>
+                </div>
+                <div class="item">
+                    <img src="pictures/pic_10.jfif" alt="Queen of Chess">
+                    <p>February 6, 2026</p>
+                </div>
+                <div class="item">
+                    <img src="pictures/pic_11.jfif" alt="Queen of Chess">
+                    <p>February 6, 2026</p>
+                </div>
+                <div class="item">
+                    <img src="pictures/pic_21.jfif" alt="Queen of Chess">
+                    <p>February 6, 2026</p>
+                </div>
+            </div>
+            <div class="footer-btn">
+                <button>Show 7 more in February</button>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="site-footer">
+    <div class="footer-promo">
+        <div class="promo-content">
+            <h2>Looking for company assets?</h2>
+            <p>Get more images and information about Netflix on our company site.</p>
+            <a href="#" class="btn-outline">Go to About Netflix</a>
+        </div>
+    </div>
+    
+  
+
+    <footer class="footer">
+
+        <ul class="footer-links">
+            <li><a href="../FAQ/FAQ.html">FAQ</a></li>
+            <li><a href="../Help Center/helpCenter.html">Help Center</a></li>
+            <li><a href="../../signin/SignButton.Netflix.html">Account</a></li>
+            <li><a href="../media Center/mediaCenter.html">Media Center</a></li>
+            <li><a href="../Investor Relations/Investor_Relations.html">Investor Relations</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="../way to watch/wayToWatch.html">Ways to Watch</a></li>
+            <li><a href="../Trem and condition/termCondition.html">Terms of Use</a></li>
+            <li><a href="../Privacy/privacy.html">Privacy</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+            <li><a href="../Corporate Information/Corporate_Information.html">Corporate Information</a></li>
+            <li><a href="../Contact us/contactUs.html">Contact Us</a></li>
+            <li><a href="../Speed/speed.html">Speed Test</a></li>
+            <li><a href="../legal Notice/legalNotice.html">Legal Notices</a></li>
+            <li><a href="../only on netflix/onlyOnNetflix.html">Only on Netflix</a></li>
+        </ul>
+
+    </footer>
+</footer>
+
+    <script src="mediaCenter.js"></script>
+</body>
+
+</html>
