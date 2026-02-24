@@ -205,71 +205,149 @@ h1 {
 
 /* ===== Explore Carousel Cards ===== */
 
-.col-five {
-    flex: 0 0 20%;
-    max-width: 20%;
+.row {
+    padding: 40px 50px;
 }
 
-.movie-card {
-    width: 100%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.movie-card:hover {
-    transform: scale(1.04);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
-    z-index: 2;
-}
-
-.movie-thumb-wrapper {
-    position: relative;
-    width: 100%;
-    height: 260px;
-}
-
-/* ===== Image Number Badge ===== */
-
-
-.card-number {
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
-    width: 36px;
-    height: 36px;
-    background: #000;
+.Your_next_movie {
     color: #fff;
-    border: 2px solid #fff;
-    border-radius: 50%;
+    font-family: 'Netflix Sans', Arial;
+}
+
+.slider {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: 600;
-    z-index: 2;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    flex: 0 0 auto; 
+    width: 200px;  
+    height: 300px; 
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #333;
 }
 
 
-.movie-thumb-wrapper img {
+.card img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 16px;
-    position: relative;
-    z-index: 1;
+    object-fit: cover; 
+    display: block;
+    transition: transform 0.3s ease;
 }
 
-.rank-number {
+.card img:hover {
+    transform: scale(1.08);
+}
+
+
+
+
+.pricing-section {
+    padding: 50px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.plan-card.selected {
+
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #e50914, #0044ff) 1;
+    box-shadow: 0 0 15px rgba(229, 9, 20, 0.4), 0 0 15px rgba(0, 68, 255, 0.4);
+
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.plan_for_you {
+    color: #fff;
+    font-family: 'Netflix Sans', Arial;
+}
+
+
+.row {
+    padding: 40px 100px;
+}
+
+/* Arrow */
+
+.slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    /* Essential for the sliding animation */
+    padding: 10px 0;
+}
+
+/* Hide scrollbar for a cleaner look */
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-btn {
     position: absolute;
-    bottom: 5px;
-    font-size: 120px;
-    font-weight: 800;
-    color: transparent;
-    color: black;
-    -webkit-text-stroke: 3px #fff; /* white border */
-    /* text-stroke: 3px #fff; */
-    z-index: 3;
-    line-height: 1;
-    pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    height: 60px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+    opacity: 1;
+    /* Hidden by default */
+    transition: opacity 0.3s ease, background 0.3s;
+
+    border-radius: 5px;
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+.nav-btn:hover {
+    background: black;
+}
+
+.card-info {
+    width: 100%;
+    padding: 8px 0;
+    /* Adds some space above/below the text */
+}
+
+.movie-title {
+    color: white;
+    /* Ensure text is visible on your background */
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 /* Small hover polish */
@@ -296,7 +374,7 @@ h1 {
 
 
 .carousel-control-prev.movie-nav {
-    left: -25px;   /* move outside */
+    left: -25px; 
 }
 
 .carousel-control-next.movie-nav {

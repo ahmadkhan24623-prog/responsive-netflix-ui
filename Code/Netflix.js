@@ -26,18 +26,18 @@ signupForms.forEach(form => {
 
 let index = 0;
 
-function moveRow(direction) {
-    const track = document.getElementById("track");
-    const cardWidth = 180 + 14;
-    const visibleCards = 6;
-    const maxIndex = track.children.length - visibleCards;
-
-    index += direction * visibleCards;
-
-    if (index < 0) index = 0;
-    if (index > maxIndex) index = maxIndex;
-
-    track.style.transform = `translateX(-${index * cardWidth}px)`;
+function scrollSlider(event, direction) {
+    const btn = event.target;
+    const slider = btn.parentElement.querySelector('.slider');
+    
+    if (slider) {
+        const scrollAmount = 460; 
+        
+        slider.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth'
+        });
+    }
 }
 
 

@@ -44,129 +44,32 @@
 
     <header>
 
-        <div class="container mt-5">
-            <div class="row mb-4">
-                <div class="col-12">
-                    <h2 class="fs-2 fw-bold mb-0 Explore_prop">Trending Now</h2>
-                </div>
-            </div>
+              <section class="row">
+            <h2 class="Your_next_movie">Only on Netflix</h2>
 
-            <div id="movieCarousel" class="carousel slide movie_carousel" data-bs-ride="false">
-                <div class="carousel-inner">
+            <div class="slider-wrapper">
+                <button class="nav-btn left-btn" onclick="scrollSlider(event,-1)">&#10094;</button>
 
-                    <div class="carousel-item active">
-                        <div class="d-flex flex-nowrap">
-                            <div class="col-five">
-                                <div class="movie-card p-2">
-                                    <div class="movie-thumb-wrapper">
-                                        <span class="rank-number">1</span>
-                                        <img src="../Pictures/Movies images/pic 11.jpg" class="rounded-4" alt="City 1">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-five">
-                                <div class="movie-card p-2">
-                                    <div class="movie-thumb-wrapper">
-                                        <span class="rank-number">2</span>
-                                        <img src="../Pictures/Movies images/pic2.jpg" class="rounded-4" alt="City 2">
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-five">
-                                <div class="movie-card p-2">
-                                    <div class="movie-thumb-wrapper">
-                                        <span class="rank-number">3</span>
-                                        <img src="../Pictures/Movies images/pic3.jpg" class="rounded-4" alt="City 3">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-five">
-                                <div class="movie-card p-2">
-                                    <div class="movie-thumb-wrapper">
-                                        <span class="rank-number">4</span>
-                                        <img src="../Pictures/Movies images/pic4.jpg" class="rounded-4" alt="City 4">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-five">
-                                <div class="movie-card p-2">
-                                    <div class="movie-thumb-wrapper">
-                                        <span class="rank-number">5</span>
-                                        <img src="../Pictures/Movies images/pic4.avif" class="rounded-4" alt="City 5">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="slider" id="MovieSlider">
+                    <div class="card"><img src="../Pictures/Movies images/pic4.jpg" alt="Movie">
+                       
                     </div>
-
-                    <div class="carousel-item">
-                        <div class="d-flex flex-nowrap">
-                            <div class="col-five">
-                                <div class="movie-card p-2">
-                                    <div class="movie-thumb-wrapper">
-                                        <span class="rank-number">6</span>
-                                        <img src="../Pictures/Movies images/pic6.jfif"
-                                            class="rounded-4" alt="City 6">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-five">
-                                <div class="movie-card p-2">
-                                    <div class="movie-thumb-wrapper">
-                                        <span class="rank-number">7</span>
-                                        <img src="../Pictures/Movies images/pic7.jpg"
-                                            class="rounded-4" alt="City 7">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-five">
-                                <div class="movie-card p-2">
-                                    <div class="movie-thumb-wrapper">
-                                        <span class="rank-number">8</span>
-                                        <img src="../Pictures/Movies images/pic8.jpg"
-                                            class="rounded-4" alt="City 8">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-five">
-                                <div class="movie-card p-2">
-                                    <div class="movie-thumb-wrapper">
-                                        <span class="rank-number">9</span>
-                                        <img src="../Pictures/Movies images/pic9.jfif"
-                                            class="rounded-4" alt="City 9">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-five">
-                                <div class="movie-card p-2">
-                                    <div class="movie-thumb-wrapper">
-                                        <span class="rank-number">10</span>
-                                        <img src="../Pictures/Movies images/pic10.jpg"
-                                            class="rounded-4" alt="City 10">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="card"><img src="../Pictures/Movies images/pic2.jpg" alt="Movie"></div>
+                    <div class="card"><img src="../Pictures/Movies images/pic3.jpg" alt="Movie"></div>
+                    <div class="card"><img src="../Pictures/Movies images/pic1.jfif" alt="Movie"></div>
+                    <div class="card"><img src="../Pictures/Movies images/pic 11.jpg" alt="Movie"></div>
+                    <div class="card"><img src="../Pictures/Movies images/pic10.jpg" alt="Movie"></div>
+                    <div class="card"><img src="../Pictures/Movies images/pic7.jpg" alt="Movie"></div>
+                    <div class="card"><img src="../Pictures/Movies images/pic8.jpg" alt="Movie"></div>
+                    <div class="card"><img src="../Pictures/Movies images/pic6.jfif" alt="Movie"></div>
+                    <div class="card"><img src="../Pictures/Movies images/pic9.jfif" alt="Movie"></div>
                 </div>
 
-                <button class="carousel-control-prev movie-nav" type="button" data-bs-target="#movieCarousel"
-                    data-bs-slide="prev">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <button class="carousel-control-next movie-nav" type="button" data-bs-target="#movieCarousel"
-                    data-bs-slide="next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
-
-                <div class="carousel-indicators custom-indicators">
-                    <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="1"></button>
-                </div>
+                <button class="nav-btn right-btn" onclick="scrollSlider(event,1)">&#10095;</button>
             </div>
-        </div>
+        </section>
+
+            
 
 
 
