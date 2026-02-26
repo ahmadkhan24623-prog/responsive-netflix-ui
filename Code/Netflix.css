@@ -616,82 +616,93 @@ h1 {
     font-size: 0.8rem;
 }
 
-
-/* Responsive */
-@media (max-width: 740px) {
-    h1 {
-        font-size: 2rem;
+/* Optimized for iPhone 11 Pro & Modern Smartphones */
+@media (max-width: 768px) {
+    /* Hero Section Adjustments */
+    .navbar {
+        padding: 20px 5%;
+    }
+    
+    .logo {
+        font-size: 1.8rem;
     }
 
+    .hero-section {
+        padding: 60px 20px;
+    }
+
+    h1 {
+        font-size: 2rem; /* Shorter title for small screens */
+        line-height: 1.2;
+    }
+
+    .price-text {
+        font-size: 1.1rem;
+    }
+
+    /* Fix the "Get Started" button and input */
     .signup-container {
         flex-direction: column;
-        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .input-wrapper {
+        max-width: 100%;
     }
 
     .btn-get-started {
         font-size: 1.1rem;
-        padding: 10px 20px;
+        justify-content: center;
+        width: 100%;
+        padding: 12px;
     }
-}
 
-@media (max-width: 740px) {
+    /* Fix Layout Padding (The 100px was killing the mobile view) */
+    .row, .faq-list, .card-grid, .section-title {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .section-title {
+        padding-top: 30px;
+        font-size: 1.3rem;
+    }
+
+    /* Grid Adjustment */
+    .card-grid {
+        grid-template-columns: 1fr; /* Stack cards on top of each other */
+    }
+
+    .card_image {
+        min-height: 200px;
+        padding: 20px;
+    }
+
+    /* Footer Links Adjustment */
     .footer-links {
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
-
-    .email-form input {
-        width: 100%;
-    }
-}
-
-
-
-
-@media (max-width: 992px) {
-    .col-five {
-        flex: 0 0 33.33%; 
-        max-width: 33.33%;
-    }
-    .movie-thumb-wrapper {
-        height: 220px;
+    
+    .main-container_2 {
+        padding: 40px 20px;
     }
 }
 
-
-@media (max-width: 768px) {
-    .col-five {
-        flex: 0 0 50%; 
-        max-width: 50%;
-    }
-    .movie-thumb-wrapper {
-        height: 180px;
-    }
-}
-
-
+/* Specific fix for the Movie Slider on Mobile */
 @media (max-width: 480px) {
-    .col-five {
-        flex: 0 0 100%;
-        max-width: 100%;
+    .card {
+        width: 140px; /* Slightly smaller cards to see more on screen */
+        height: 210px;
     }
-    .movie-thumb-wrapper {
-        height: 150px;
+    
+    .nav-btn {
+        display: none; /* Hide arrows on mobile, users prefer swiping */
     }
-}
-
-
-.rank-number {
-    font-size: 120px;
-}
-
-@media (max-width: 992px) {
-    .rank-number { font-size: 90px; }
-}
-
-@media (max-width: 768px) {
-    .rank-number { font-size: 60px; }
-}
-
-@media (max-width: 480px) {
-    .rank-number { font-size: 40px; }
+    
+    .slider {
+        gap: 8px;
+        -webkit-overflow-scrolling: touch; /* Smooth momentum scrolling for iPhone */
+    }
 }
