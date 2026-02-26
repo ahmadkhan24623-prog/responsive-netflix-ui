@@ -189,9 +189,104 @@ h1 {
     font-size: 13px;
 }
 
-/* Responsive adjustments for narrow screens */
-@media (max-width: 600px) {
-    h1 { font-size: 24px; }
-    .plans-row { grid-template-columns: 1fr; } /* Stacks like your recording */
-    .next-btn { width: 90%; }
+/* --- MEDIA QUERIES --- */
+
+/* Tablet & Smaller Desktop (Fixes squashing before stack) */
+@media (max-width: 1024px) {
+    .membership-wrapper {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+
+    .plans-row {
+        grid-template-columns: repeat(2, 1fr); /* 2x2 grid looks better on tablets */
+        gap: 20px;
+    }
+}
+
+/* iPhone 11 Pro & General Mobile (375px - 480px) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .sign-out {
+        font-size: 15px;
+    }
+
+    .membership-wrapper {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 23px; /* Prevents text from breaking into too many lines */
+        margin-bottom: 20px;
+    }
+
+    /* Stack cards vertically for touch ease */
+    .plans-row {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    .plan-card {
+        border-radius: 12px; /* Slightly softer corners for mobile */
+    }
+
+    /* Selection State on Mobile */
+    .plan-card.active {
+        transform: scale(1.02); /* Subtle pop instead of large lift */
+    }
+
+    .card-header {
+        padding: 15px;
+        min-height: 70px;
+    }
+
+    .p-name {
+        font-size: 16px;
+    }
+
+    .info-row {
+        padding: 12px 0;
+        font-size: 12px;
+    }
+
+    .info-row b {
+        font-size: 14px;
+    }
+
+    /* Make the button feel native to mobile */
+    .next-btn {
+        width: 100%;
+        max-width: none;
+        margin: 30px 0;
+        padding: 16px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+
+    /* Footer adjustments */
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for links */
+        gap: 12px;
+    }
+}
+
+/* Very Small Devices (Under 350px) */
+@media (max-width: 350px) {
+    h1 {
+        font-size: 20px;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
 }
