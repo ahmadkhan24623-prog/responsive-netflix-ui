@@ -1,4 +1,3 @@
-/* style.css */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +11,8 @@ body {
   color: white;
 }
 
-/* INTRO */
+/* ================= INTRO ================= */
+
 .intro {
   position: fixed;
   width: 100%;
@@ -22,13 +22,14 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  transition: opacity 1s ease, visibility 1s ease;
 }
 
 .intro-logo {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 120px;
   color: #e50914;
-  letter-spacing: 10px;
+  letter-spacing: 12px;
   animation: zoomLogo 3s ease forwards;
 }
 
@@ -43,58 +44,59 @@ body {
   }
   100% {
     transform: scale(1);
-    opacity: 1;
   }
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 .hero {
   position: relative;
   height: 100vh;
+  background: radial-gradient(circle at center, #111 0%, #000 70%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   opacity: 0;
+  transition: opacity 1.5s ease;
 }
 
 .hero.active {
-  animation: showHero 1s ease forwards;
+  opacity: 1;
 }
 
-@keyframes showHero {
-  to {
-    opacity: 1;
-  }
-}
 
-/* RED LIGHT */
 .hero::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 200%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(229, 9, 20, 0.3), transparent);
-  animation: moveLight 4s linear infinite;
-  z-index: -1;
+  background: linear-gradient(
+    120deg,
+    transparent 40%,
+    rgba(229, 9, 20, 0.4) 50%,
+    transparent 60%
+  );
+  animation: sweep 5s linear infinite;
 }
 
-@keyframes moveLight {
+@keyframes sweep {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
   to {
-    transform: translateX(100%);
+    transform: translateX(50%);
   }
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
+
 .navbar {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 20px 50px;
+  padding: 20px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,33 +113,36 @@ body {
   border: none;
   color: white;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 4px;
+  transition: 0.3s;
 }
 
-/* HERO TEXT */
+.nav-right button:hover {
+  background: #f40612;
+}
+
+/* ================= HERO TEXT ================= */
+
 .hero-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 90px;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
   opacity: 0;
-  transform: translateY(50px);
-}
-
-.hero-title.active {
-  animation: textFade 2s ease forwards;
+  transform: translateY(40px);
 }
 
 .hero-subtitle {
   margin-top: 20px;
   font-size: 20px;
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(40px);
 }
 
+.hero-title.active,
 .hero-subtitle.active {
-  animation: textFade 2s ease forwards;
+  animation: textFade 1.5s ease forwards;
 }
 
 @keyframes textFade {
@@ -147,13 +152,90 @@ body {
   }
 }
 
-/* RESPONSIVE */
+
+/* ================= SCROLL SECTION ================= */
+
+.scroll-section {
+  position: relative;
+  height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Black screen animation */
+.scroll-overlay {
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transition: 1s ease;
+  z-index: 2;
+}
+
+.scroll-section.active .scroll-overlay {
+  bottom: 0;
+}
+
+/* Content */
+.scroll-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: 1s ease;
+}
+
+.scroll-section.active .scroll-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Image */
+.scroll-image {
+  width: 60%;
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+/* White Title */
+.scroll-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 60px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Red bottom fill */
+.scroll-text {
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(to top, #e50914 0%, transparent 0%);
+  background-size: 100% 0%;
+  background-repeat: no-repeat;
+  transition: 1s ease;
+}
+
+.scroll-section.active .scroll-text {
+  background-size: 100% 100%;
+}
+
+/* ================= RESPONSIVE ================= */
+
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 50px;
+    font-size: 45px;
   }
 
   .intro-logo {
     font-size: 70px;
+  }
+
+  .navbar {
+    padding: 20px;
   }
 }
