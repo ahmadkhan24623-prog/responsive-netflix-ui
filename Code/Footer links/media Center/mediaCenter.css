@@ -467,3 +467,51 @@ body {
         padding: 60px 20px;
     }
 }
+
+
+/* --- iPhone 11 Pro (375px x 812px) Specific --- */
+
+@media only screen and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+    /* Header & Navigation Fixes */
+    .nav-overlay {
+        padding: 10px 15px; /* Tighter padding for the notch area */
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        gap: 8px; /* Reducing gap to prevent overflow */
+        font-size: 11px; /* Slightly smaller text for better fit */
+    }
+
+    /* Hero section adjustments */
+    .hero-content h1 {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    /* Logo or brand text adjustment if necessary */
+    .media-center-text {
+        font-size: 18px;
+        display: block; /* Overriding your 850px 'none' if you want it on iPhone */
+        text-align: center;
+    }
+
+    /* Search bar optimization */
+    .search-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .search-wrapper input {
+        height: 45px;
+        font-size: 14px;
+    }
+}
