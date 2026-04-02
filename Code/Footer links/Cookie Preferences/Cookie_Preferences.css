@@ -1,4 +1,4 @@
-/* 1. Modal Overlay - Darkens the whole screen */
+
 .modal-overlay {
     display: none; 
     position: fixed;
@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Helvetica Neue', Arial, sans-serif;
+    border-radius: 10px;
 }
 
 /* 2. Main Box Layout */
@@ -32,7 +33,7 @@
 }
 
 .brand-netflix {
-    color: #e50914; /* Netflix Red */
+    color: #e50914; 
     font-weight: 900;
     font-size: 1.5rem;
     letter-spacing: -1px;
@@ -44,7 +45,7 @@
     font-size: 22px;
 }
 
-/* 4. Split Body (Sidebar + Text) */
+
 .modal-body {
     display: flex;
     flex: 1;
@@ -73,7 +74,7 @@
 
 .tab-link.active {
     background: white;
-    border-right: 5px solid #e50914; /* The red bar from your video */
+    border-right: 5px solid #e50914; 
     font-weight: bold;
     color: #000;
 }
